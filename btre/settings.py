@@ -139,3 +139,9 @@ try:
     from .local_settings import *
 except ImportError:
     from .prod_settings import *
+
+# Messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
